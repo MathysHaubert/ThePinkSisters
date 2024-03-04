@@ -1,0 +1,21 @@
+{% extends '../../base.html.twig' %}
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block header %}
+    {% include 'public/home/navbar.html.twig' %}
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <hr style="visibility:hidden ">
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <img src="{{ asset('images/logo.PNG') }}" alt="logo The Pink Sisters" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <h2 class="display-2 pink"><strong>The Pink Sisters</strong></h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
