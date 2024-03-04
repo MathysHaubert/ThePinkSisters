@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -8,10 +8,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeManagerController extends AbstractController
 {
-    #[Route('/home/manager', name: 'app_home_manager')]
+    #[Route('/admin/home', name: 'app_home_manager')]
     public function index(): Response
     {
-        return $this->render('home_manager/index.html.twig', [
+
+        return $this->render('admin/home_manager/index.html.twig', [
             'controller_name' => 'HomeManagerController',
         ]);
     }

@@ -1,0 +1,8 @@
+.navbar {
+    background-color: #f4e3f0 !important;
+}
+.navbar .text {
+    color:#d56298 !important;
+    font-family: 'Montserrat';font-size: 15px;
+    font-weight: bold;
+}

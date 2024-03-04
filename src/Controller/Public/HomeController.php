@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\Shop;
+namespace App\Controller\Public;
 
 use App\Repository\CategoryRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

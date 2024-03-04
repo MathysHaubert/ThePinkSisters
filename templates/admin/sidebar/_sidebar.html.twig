@@ -1,0 +1,19 @@
+{% extends 'base.html.twig'
+%}
+{% block title %}Admin{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/sidebar.css') }}">
+{% endblock %}
+
+{%  block body %}
+    <div class="sidebar">
+        <h3 class="display-6 text-white mx-1"><a href="/admin/dashboard">Administration</a></h3>
+        <hr>
+        <a class="dropdown-item" href="/admin/home">Qui nous sommes</a>
+        <a class="dropdown-item" href="#">Notre histoire</a>
+        <a class="dropdown-item" href="#">Nos évenements</a>
+        <a class="dropdown-item" href="#">Categories de blog</a>
+        <a class="dropdown-item" href="/blog/create">Gestion de blog</a>
+    </div>
+{% endblock %}

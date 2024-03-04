@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #bc8bad;
+    padding-top: 20px;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #dcdcdc;
+}
+.content {
+    margin-left: 250px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+.layout {
+    display: flex;
+}
+.content {
+    /* Prend l'espace restant */
+    flex-grow: 1;
+    padding: 20px; /* Ajoutez un peu de padding autour de votre contenu */
+}
